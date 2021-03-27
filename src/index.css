@@ -11,6 +11,8 @@
 }
 
 .btns {
+  height: 30px;
+  width: 90px;
   color: white;
   background-color: black;
   border: none;

@@ -17,6 +17,10 @@ let pageLoad = () => {
   menuBtn.classList.add('btns');
   contactBtn.classList.add('btns');
 
+  aboutBtn.setAttribute('id', 'about')
+  menuBtn.setAttribute('id', 'menu')
+  contactBtn.setAttribute('id', 'contact')
+
   aboutBtn.autofocus = true
 
   displayDiv.classList.add('display')
