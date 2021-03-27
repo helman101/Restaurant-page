@@ -1,0 +1,11 @@
+.content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+  border-radius: 20px;
+  width: 75%;
+}
+
+.background-img {
+   background-size: cover;
+   background-repeat: no-repeat;
+}

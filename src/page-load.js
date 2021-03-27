@@ -1,13 +1,14 @@
-const container = document.querySelector('#content');
-
 let pageLoad = () => {
-  let homepageImg = document.createElement('img');
+  const container = document.querySelector('#content');
+  container.classList.add('content')
+
   let description = document.createElement('p');
   
-  homepageImg.setAttribute('src', '../src/img/restaurant-homepage.jpg');
+  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)'
+  document.body.classList.add('background-img')
+
   description.textContent = 'Welcome to Criollo Flavor, we are specialists in colombian food, so take a look to our menu a let the flavor take you to another country';
 
-  document.body.appendChild(homepageImg);
   container.appendChild(description);
 }
 
