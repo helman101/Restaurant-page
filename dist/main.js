@@ -10,13 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet showAbout = () => {\n  let displayDiv = document.querySelector('#display');\n  let displayPara = document.createElement('p');\n\n  displayPara.textContent = 'Welcome to Criollo Flavor, we are specialists in colombian food, so take a look to our menu a let the flavor take you to another country';\n  \n  displayDiv.innerHTML = '';\n  displayDiv.appendChild(displayPara)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showAbout);\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet showContact = () => {\n  let displayDiv = document.querySelector('#display');\n  let displayPara = document.createElement('p');\n\n  displayPara.textContent = 'Contact';\n  displayDiv.innerHTML = '';\n  displayDiv.appendChild(displayPara);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showContact);\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\n\n(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\n\n(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.default)();\n(0,_about__WEBPACK_IMPORTED_MODULE_1__.default)();\n\nlet aboutBtn = document.querySelector('#about');\nlet menuBtn = document.querySelector('#menu');\nlet contactBtn = document.querySelector('#contact');\n\naboutBtn.onclick = _about__WEBPACK_IMPORTED_MODULE_1__.default;\nmenuBtn.onclick = _menu__WEBPACK_IMPORTED_MODULE_2__.default;\ncontactBtn.onclick = _contact__WEBPACK_IMPORTED_MODULE_3__.default;\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet showMenu = () => {\n  let displayDiv = document.querySelector('#display');\n  let displayPara = document.createElement('p');\n\n  displayPara.textContent = 'Menu';\n  displayDiv.innerHTML = '';\n  displayDiv.appendChild(displayPara);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showMenu);\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
@@ -26,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet pageLoad = () => {\n  const container = document.querySelector('#content');\n  const btnsDiv = document.createElement('div');\n  const displayDiv = document.createElement('div');\n  const aboutBtn = document.createElement('button');\n  const menuBtn = document.createElement('button');\n  const contactBtn = document.createElement('button');\n\n  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)';\n  document.body.classList.add('body');\n\n  aboutBtn.textContent = 'About';\n  menuBtn.textContent = 'Menu';\n  contactBtn.textContent = 'Contact';\n\n  aboutBtn.classList.add('btns');\n  menuBtn.classList.add('btns');\n  contactBtn.classList.add('btns');\n\n  aboutBtn.setAttribute('id', 'about')\n  menuBtn.setAttribute('id', 'menu')\n  contactBtn.setAttribute('id', 'contact')\n\n  aboutBtn.autofocus = true\n\n  displayDiv.classList.add('display')\n\n  container.classList.add('content');\n\n  btnsDiv.appendChild(aboutBtn);\n  btnsDiv.appendChild(menuBtn);\n  btnsDiv.appendChild(contactBtn);\n  container.appendChild(btnsDiv);\n  container.appendChild(displayDiv);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad); \n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet pageLoad = () => {\n  const container = document.querySelector('#content');\n  const btnsDiv = document.createElement('div');\n  const displayDiv = document.createElement('div');\n  const aboutBtn = document.createElement('button');\n  const menuBtn = document.createElement('button');\n  const contactBtn = document.createElement('button');\n\n  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)';\n  document.body.classList.add('body');\n\n  aboutBtn.textContent = 'About';\n  menuBtn.textContent = 'Menu';\n  contactBtn.textContent = 'Contact';\n\n  aboutBtn.classList.add('btns');\n  menuBtn.classList.add('btns');\n  contactBtn.classList.add('btns');\n\n  aboutBtn.setAttribute('id', 'about');\n  menuBtn.setAttribute('id', 'menu');\n  contactBtn.setAttribute('id', 'contact');\n\n  displayDiv.setAttribute('id', 'display');\n\n  aboutBtn.autofocus = true;\n\n  displayDiv.classList.add('display');\n\n  container.classList.add('content');\n\n  btnsDiv.appendChild(aboutBtn);\n  btnsDiv.appendChild(menuBtn);\n  btnsDiv.appendChild(contactBtn);\n  container.appendChild(btnsDiv);\n  container.appendChild(displayDiv);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad); \n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
 
 /***/ })
 
