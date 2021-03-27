@@ -2,10 +2,12 @@
   color: white;
   background-color: black;
   width: 50%;
+  height: 75%;
 }
 
 .display {
   color: black;
+  height: 100%;
   background-color: white;
   padding: 1rem;
 }
