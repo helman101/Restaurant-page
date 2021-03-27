@@ -1,11 +1,32 @@
 .content {
   color: white;
-  background-color: rgba(0, 0, 0, 0.521);
-  border-radius: 20px;
-  width: 75%;
+  background-color: black;
+  width: 50%;
 }
 
-.background-img {
-   background-size: cover;
-   background-repeat: no-repeat;
+.display {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+}
+
+.btns {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.btns:focus {
+  outline: none;
+  color: black;
+  background-color: white;
+}
+
+.body {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

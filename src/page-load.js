@@ -1,15 +1,33 @@
 let pageLoad = () => {
   const container = document.querySelector('#content');
-  container.classList.add('content')
+  const btnsDiv = document.createElement('div');
+  const displayDiv = document.createElement('div');
+  const aboutBtn = document.createElement('button');
+  const menuBtn = document.createElement('button');
+  const contactBtn = document.createElement('button');
 
-  let description = document.createElement('p');
-  
-  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)'
-  document.body.classList.add('background-img')
+  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)';
+  document.body.classList.add('body');
 
-  description.textContent = 'Welcome to Criollo Flavor, we are specialists in colombian food, so take a look to our menu a let the flavor take you to another country';
+  aboutBtn.textContent = 'About';
+  menuBtn.textContent = 'Menu';
+  contactBtn.textContent = 'Contact';
 
-  container.appendChild(description);
+  aboutBtn.classList.add('btns');
+  menuBtn.classList.add('btns');
+  contactBtn.classList.add('btns');
+
+  aboutBtn.autofocus = true
+
+  displayDiv.classList.add('display')
+
+  container.classList.add('content');
+
+  btnsDiv.appendChild(aboutBtn);
+  btnsDiv.appendChild(menuBtn);
+  btnsDiv.appendChild(contactBtn);
+  container.appendChild(btnsDiv);
+  container.appendChild(displayDiv);
 }
 
 export default pageLoad 
