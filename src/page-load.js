@@ -27,6 +27,8 @@ let pageLoad = () => {
 
   displayDiv.classList.add('display');
 
+  btnsDiv.classList.add('btns-div')
+
   container.classList.add('content');
 
   btnsDiv.appendChild(aboutBtn);
