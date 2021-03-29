@@ -1,3 +1,8 @@
+import bandejaImg from './img/bandeja-paisa.jpeg';
+import ajiacoImg from './img/ajiaco.jpg';
+import arepaImg from './img/arepa.jpg';
+import tamalImg from './img/tamal.jpg';
+
 class Foods {
   constructor(name, price, image) {
     this.name = name;
@@ -6,10 +11,10 @@ class Foods {
   }
 }
 
-const bandejaPaisa = new Foods('Bandeja Paisa', '5', '../src/img/bandeja-paisa.jpeg');
-const ajiaco = new Foods('Ajiaco', '3', '../src/img/ajiaco.jpg');
-const tamal = new Foods('Tamal', '2', '../src/img/tamal.jpg');
-const arepa = new Foods('Arepa', '1.50', '../src/img/arepa.jpg');
+const bandejaPaisa = new Foods('Bandeja Paisa', '5', bandejaImg);
+const ajiaco = new Foods('Ajiaco', '3', ajiacoImg);
+const tamal = new Foods('Tamal', '2', tamalImg);
+const arepa = new Foods('Arepa', '1.50', arepaImg);
 
 const menuArray = [bandejaPaisa, ajiaco, tamal, arepa];
 

@@ -1,3 +1,5 @@
+import backgroundImg from './img/restaurant-homepage.jpg'
+
 const pageLoad = () => {
   const container = document.querySelector('#content');
   const btnsDiv = document.createElement('div');
@@ -6,7 +8,7 @@ const pageLoad = () => {
   const menuBtn = document.createElement('button');
   const contactBtn = document.createElement('button');
 
-  document.body.style = 'background-image: url(../src/img/restaurant-homepage.jpg)';
+  document.body.style = `background-image: url(${backgroundImg})`;
   document.body.classList.add('body');
 
   aboutBtn.textContent = 'About';
