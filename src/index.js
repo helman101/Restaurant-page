@@ -6,9 +6,9 @@ import showContact from './contact';
 pageLoad();
 showAbout();
 
-let aboutBtn = document.querySelector('#about');
-let menuBtn = document.querySelector('#menu');
-let contactBtn = document.querySelector('#contact');
+const aboutBtn = document.querySelector('#about');
+const menuBtn = document.querySelector('#menu');
+const contactBtn = document.querySelector('#contact');
 
 aboutBtn.onclick = showAbout;
 menuBtn.onclick = showMenu;

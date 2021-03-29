@@ -1,4 +1,4 @@
-let pageLoad = () => {
+const pageLoad = () => {
   const container = document.querySelector('#content');
   const btnsDiv = document.createElement('div');
   const displayDiv = document.createElement('div');
@@ -27,7 +27,7 @@ let pageLoad = () => {
 
   displayDiv.classList.add('display');
 
-  btnsDiv.classList.add('btns-div')
+  btnsDiv.classList.add('btns-div');
 
   container.classList.add('content');
 
@@ -36,6 +36,6 @@ let pageLoad = () => {
   btnsDiv.appendChild(contactBtn);
   container.appendChild(btnsDiv);
   container.appendChild(displayDiv);
-}
+};
 
-export default pageLoad 
+export default pageLoad;
