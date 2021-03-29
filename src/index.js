@@ -2,7 +2,7 @@ import pageLoad from './page-load';
 import showAbout from './about';
 import showMenu from './menu';
 import showContact from './contact';
-import './style/index.css'
+import './style/index.css';
 
 pageLoad();
 showAbout();

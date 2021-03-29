@@ -1,4 +1,4 @@
-import backgroundImg from './img/restaurant-homepage.jpg'
+import backgroundImg from './img/restaurant-homepage.jpg';
 
 const pageLoad = () => {
   const container = document.querySelector('#content');
