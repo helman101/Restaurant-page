@@ -19,10 +19,18 @@ let showMenu = () => {
   displayDiv.classList.add('flex-wrap')
   for(let i = 0; i < menuArray.length; i+=1){
     const div = document.createElement('div');
-    let name = document.createElement('div');
+    const text = document.createElement('div');
+    const name = document.createElement('span');
+    const price = document.createElement('span');
+
+    text.classList.add('food-text')
     div.classList.add('food');
     name.textContent = menuArray[i].name;
-    div.appendChild(name);
+    price.textContent = `$ ${menuArray[i].price}`;
+
+    text.appendChild(name);
+    text.appendChild(price);
+    div.appendChild(text);
     div.style.backgroundImage = `url(${menuArray[i].image})`;
     
 

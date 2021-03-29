@@ -1,19 +1,37 @@
 .content {
   color: white;
   width: 50%;
-  height: 60%;
+  height: 80%;
 }
 
 .food {
   width: 40%;
-  height: 50%;
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
   background-size: cover;
   background-color: black;
+  margin: 10px;
+}
+
+.food-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .display {
   color: black;
-  height: 100%;
+  min-height: 60%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +42,7 @@
 }
 
 .btns {
+  font-weight: bold;
   height: 100%;
   width: 90px;
   color: white;
@@ -50,4 +69,10 @@
   height: 50px;
   width: 33.3%;
   font-size: 1.5rem;
+}
+
+.para {
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
 }
